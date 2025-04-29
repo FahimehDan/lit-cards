@@ -1,0 +1,29 @@
+{
+  "name": "lit-cards",
+  "version": "1.0.0",
+  "description": "Working with https://lit.dev/ library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FahimehDan/lit-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FahimehDan/lit-cards/issues"
+  },
+  "homepage": "https://github.com/FahimehDan/lit-cards#readme",
+  "dependencies": {
+    "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.87.0"
+  },
+  "scripts": {
+    "sass": "sass src/style.scss dist/style.css --watch"
+  }
+}
