@@ -1,11 +1,9 @@
 {
   "name": "lit-cards",
+  "type": "module",
   "version": "1.0.0",
   "description": "Working with https://lit.dev/ library",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FahimehDan/lit-cards.git"
@@ -21,9 +19,13 @@
     "lit": "^3.3.0"
   },
   "devDependencies": {
-    "sass": "^1.87.0"
+    "sass": "^1.87.0",
+    "vite": "^6.3.3"
   },
   "scripts": {
-    "sass": "sass src/style.scss dist/style.css --watch"
+    "sass": "sass src/styles/main.scss dist/main.css --watch",
+    "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
   }
 }
