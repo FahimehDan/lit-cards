@@ -102,6 +102,33 @@ export class CardItem extends LitElement {
     .img-container {
       background-color: #f5f8fa;
     }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      padding-top: 15px;
+    }
+
+    .card-footer .icon-button {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 3px;
+      transition: background 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-button:hover {
+      background-color: black;
+    }
   `;
 
   render() {
@@ -134,17 +161,26 @@ export class CardItem extends LitElement {
           </div>
        </div>
        </div>
-    <footer class="card-icons">
-        <img src="./src/assets/icon-eye.svg" class="fas fa-heart"></i>
-        <img src="./src/assets/icon-brush.svg" class="fas fa-star"></i>
-        <img src="./src/assets/icon-file-copy.svg" class="fas fa-comment"></i>
-        <img src="./src/assets/icon-delete.svg" class="fas fa-share"></i>
-        <img src="./src/assets/icon-more-horiz.svg" class="fas fa-bookmark"></i>
-    </footer>
+  
+    <div class="card-footer">
+       <button class="icon-button">
+          <img src="./src/assets/icon-eye.svg" class="fas fa-heart"></i>
+       </button>
+       <button class="icon-button">
+          <img src="./src/assets/icon-brush.svg" class="fas fa-star"></i>
+      </button>
+    <button class="icon-button">
+          <img src="./src/assets/icon-file-copy.svg" class="fas fa-comment"></i>
+     </button>
+     <button class="icon-button">
+          <img src="./src/assets/icon-delete.svg" class="fas fa-share"></i>
+     </button>
+     <button class="icon-button">
+          <img src="./src/assets/icon-more-horiz.svg" class="fas fa-bookmark"></i>
+     </button>
+   </div>
 
 </div>
-
-
      
     `;
   }
