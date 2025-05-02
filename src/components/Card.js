@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
 
 export class CardItem extends LitElement {
   static properties = {
@@ -6,55 +6,56 @@ export class CardItem extends LitElement {
     name: { type: String },
     description: { type: String },
     id: { type: String },
-    modificationDate: {type: Number},
-    iconClass: {type: String}
-
+    modificationDate: { type: Number },
+    iconClass: { type: String },
   };
 
   static styles = css`
-
     .card {
       background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       box-shadow: none;
       transition: 0.3s;
       width: 280px;
       height: 480px;
       border-radius: 8px;
     }
-      .card:hover {
-           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-     }
-
-     .card-details{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; 
-      }
-
-   .card-detail-left{
-     align-items:start;
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-  .card-detail-right{
-     align-items:end;
-      }
-           
+    .card-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-.container {
-  padding: 2px 16px;
-}
-  .image-bg{
-   display: block;
-    margin: auto;
-    width: 30%;
-    height: 30%;
-    background-color:#F5F8FA;
-    padding: 20px;
-  }
-    .img-container{
-    background-color:#F5F8FA;
+    .card-detail-left {
+      align-items: start;
+      font-family: roboto;
+      font-size: 16px;
+    }
+
+    .card-detail-right {
+      align-items: end;
+      font-family: roboto;
+      font-size: 16px;
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+    .image-bg {
+      display: block;
+      margin: auto;
+      width: 30%;
+      height: 30%;
+      background-color: #f5f8fa;
+      padding: 20px;
+    }
+    .img-container {
+      background-color: #f5f8fa;
     }
   `;
 
@@ -104,5 +105,4 @@ export class CardItem extends LitElement {
   }
 }
 
-customElements.define('card-item', CardItem);
-
+customElements.define("card-item", CardItem);
