@@ -18,11 +18,41 @@ export class CardItem extends LitElement {
       box-shadow: none;
       transition: 0.3s;
       width: 280px;
-      height: 480px;
+      height: 407px;
       border-radius: 8px;
+      font-style: roboto;
     }
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+      display: flex;
+    }
+    .small-icon {
+      padding-left: 18px;
+      padding-right: 8px;
+    }
+
+    .username {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .description {
+      font-size: 13px;
+      color: #627184;
+    }
+
+    .title {
+      font-size: 14px;
+      padding-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .text-secondary {
+      color: #627184;
+      font-size: 12px;
     }
 
     .card-details {
@@ -35,17 +65,32 @@ export class CardItem extends LitElement {
       align-items: start;
       font-family: roboto;
       font-size: 16px;
+      text-align: start;
+    }
+
+    .card-detail-left P {
+      margin: 8px 0;
+      font-size: 12px;
+      font-weight: 500;
     }
 
     .card-detail-right {
       align-items: end;
       font-family: roboto;
       font-size: 16px;
+      text-align: end;
+    }
+
+    .card-detail-right P {
+      margin: 8px 0;
+      font-weight: 500;
+      font-size: 12px;
     }
 
     .container {
       padding: 2px 16px;
     }
+
     .image-bg {
       display: block;
       margin: auto;
@@ -64,31 +109,31 @@ export class CardItem extends LitElement {
 
     <div class="card">
       <header class="container">
-        <h4>
+        <h5 class="card-header">
            <input type="checkbox" id="${this.id}" name="${this.userName}" value="${this.id}">
-           <label for="${this.userName}"> ${this.userName}</label><br>
-        </h4>
+           <img src="./src/assets/icon-world.svg" alt="Avatar" class="small-icon">
+           <label class="username" for="${this.userName}"> ${this.userName}</label><br>
+        </h5>
       </header>
        <div class="img-container">
           <img src="./src/assets/icon-world.svg" alt="Avatar" class="image-bg">
        </div>
-       
-       <div class="container">
-            <p>${this.name}</p> 
-            <p>${this.description}<p>
+       <div class="container card-body">
+       <div class="card-title">
+            <p class="title">${this.name}</p> 
+            <p class="description">${this.description}<p>
        </div>
        <div class="card-details">
-       <div class="card-detail-left">
-             <h4>Modifié le</h4>
-             <p>${this.modificationDate}<p>
-          </div>
+         <div class="card-detail-left">
+             <P>Modifié le</P>
+             <p class="text-secondary">${this.modificationDate}<p>
+         </div>
           <div class="card-detail-right">
-             <h4>Application</h4>
-             <p>Mon application<p>
+             <P>Application</P>
+             <p class="text-secondary">Mon application<p>
           </div>
-
        </div>
-
+       </div>
     <footer class="card-icons">
         <img src="./src/assets/icon-eye.svg" class="fas fa-heart"></i>
         <img src="./src/assets/icon-brush.svg" class="fas fa-star"></i>
