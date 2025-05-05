@@ -173,8 +173,8 @@ export class AppLayout extends LitElement {
       iconClass: "my-icon-class",
       description:
         "Aliqua voluptate laboris eiusmod sit occaecat. Dolor irure incididunt labor ...",
-      id: "056a3b1b-0ce7-11ed-81fc-71bc641d1d18",
-      modificationDate: "1658843778707",
+      id: crypto.randomUUID(),
+      modificationDate: Date.now(),
     };
     this.cards = [...this.cards, card];
   }
