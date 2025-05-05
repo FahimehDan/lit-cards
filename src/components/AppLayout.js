@@ -5,11 +5,13 @@ import "./Card.js";
 export class AppLayout extends LitElement {
   static properties = {
     cards: { type: Array },
+    searchText: { type: String },
   };
 
   constructor() {
     super();
     this.cards = [];
+    this.searchText = "";
   }
 
   static styles = css`
@@ -18,7 +20,7 @@ export class AppLayout extends LitElement {
       justify-content: start;
       align-items: center;
       background-color: white;
-      padding: 24px;
+      padding: 5px 24px 24px 24px;
     }
 
     .header .create-button {
@@ -116,6 +118,10 @@ export class AppLayout extends LitElement {
   `;
 
   render() {
+    const filteredCards = this.cards.filter((card) =>
+      card.name.toLowerCase().includes(this.searchText)
+    );
+
     return html`
       <menu-bar></menu-bar>
       <div class="container">
@@ -135,10 +141,8 @@ export class AppLayout extends LitElement {
                 name="search"
                 id="searchBar"
                 placeholder="Nom d’une ressource"
-                @input="${(e) =>
-                  this.dispatchEvent(
-                    new CustomEvent("search-input", { detail: e })
-                  )}"
+                @input=${this.updateSearch}
+                .value=${this.searchText}
               />
               <button type="submit" class="button-search">
                 <img src="./src/assets/search.svg" alt="Search" />
@@ -148,7 +152,7 @@ export class AppLayout extends LitElement {
         </div>
 
         <div class="card-container">
-          ${this.cards.map(
+          ${filteredCards.map(
             (card) => html`
               <card-item
                 .userName=${card.userName}
@@ -164,6 +168,10 @@ export class AppLayout extends LitElement {
         </div>
       </div>
     `;
+  }
+
+  updateSearch(e) {
+    this.searchText = e.target.value.toLowerCase();
   }
 
   createCard() {
