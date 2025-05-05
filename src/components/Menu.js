@@ -8,6 +8,9 @@ export class MenuBar extends LitElement {
       align-items: center;
       padding: 0 0 0 1rem;
       background-color: #ecf2f6;
+      height: 40px;
+      line-height: 0px;
+      overflow: hidden;
     }
 
     .left,
