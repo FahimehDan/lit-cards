@@ -132,6 +132,13 @@ export class CardItem extends LitElement {
   `;
 
   render() {
+    const date = new Date(this.modificationDate);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+
     return html`
       <div class="card">
         <header class="container">
@@ -169,7 +176,7 @@ export class CardItem extends LitElement {
           <div class="card-details">
             <div class="card-detail-left">
               <p>Modifié le</p>
-              <p class="text-secondary">${this.modificationDate}</p>
+              <p class="text-secondary">${formattedDate}</p>
               <p></p>
             </div>
 
