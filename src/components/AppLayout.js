@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import "./Menu.js";
 import "./Header.js";
 import "./Card.js";
 
@@ -24,6 +25,8 @@ export class AppLayout extends LitElement {
 
   render() {
     return html`
+      <menu-bar></menu-bar>
+
       <div class="container">
         <button @click=${this.createCard}>Créer</button>
         <input />

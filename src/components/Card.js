@@ -133,55 +133,75 @@ export class CardItem extends LitElement {
 
   render() {
     return html`
-
-    <div class="card">
-      <header class="container">
-        <h5 class="card-header">
-           <input type="checkbox" id="${this.id}" name="${this.userName}" value="${this.id}">
-           <img src="./src/assets/icon-world.svg" alt="Avatar" class="small-icon">
-           <label class="username" for="${this.userName}"> ${this.userName}</label><br>
-        </h5>
-      </header>
-       <div class="img-container">
-          <img src="./src/assets/icon-world.svg" alt="Avatar" class="image-bg">
-       </div>
-       <div class="container card-body">
-       <div class="card-title">
-            <p class="title">${this.name}</p> 
-            <p class="description">${this.description}<p>
-       </div>
-       <div class="card-details">
-         <div class="card-detail-left">
-             <P>Modifié le</P>
-             <p class="text-secondary">${this.modificationDate}<p>
-         </div>
-          <div class="card-detail-right">
-             <P>Application</P>
-             <p class="text-secondary">Mon application<p>
+      <div class="card">
+        <header class="container">
+          <h5 class="card-header">
+            <input
+              type="checkbox"
+              id="${this.id}"
+              name="${this.userName}"
+              value="${this.id}"
+            />
+            <img
+              src="./src/assets/icon-world.svg"
+              alt="Avatar"
+              class="small-icon"
+            />
+            <label class="username" for="${this.userName}">
+              ${this.userName}</label
+            ><br />
+          </h5>
+        </header>
+        <div class="img-container">
+          <img
+            src="./src/assets/icon-world.svg"
+            alt="Avatar"
+            class="image-bg"
+          />
+        </div>
+        <div class="container card-body">
+          <div class="card-title">
+            <p class="title">${this.name}</p>
+            <p class="description">${this.description}</p>
+            <p></p>
           </div>
-       </div>
-       </div>
-  
-    <div class="card-footer">
-       <button class="icon-button">
-          <img src="./src/assets/icon-eye.svg" class="fas fa-heart"></i>
-       </button>
-       <button class="icon-button">
-          <img src="./src/assets/icon-brush.svg" class="fas fa-star"></i>
-      </button>
-    <button class="icon-button">
-          <img src="./src/assets/icon-file-copy.svg" class="fas fa-comment"></i>
-     </button>
-     <button class="icon-button">
-          <img src="./src/assets/icon-delete.svg" class="fas fa-share"></i>
-     </button>
-     <button class="icon-button">
-          <img src="./src/assets/icon-more-horiz.svg" class="fas fa-bookmark"></i>
-     </button>
-   </div>
 
-</div>
-     
+          <div class="card-details">
+            <div class="card-detail-left">
+              <p>Modifié le</p>
+              <p class="text-secondary">${this.modificationDate}</p>
+              <p></p>
+            </div>
+
+            <div class="card-detail-right">
+              <p>Application</p>
+              <p class="text-secondary">Mon application</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <button class="icon-button">
+            <img src="./src/assets/icon-eye.svg" class="fas fa-heart" />
+          </button>
+          <button class="icon-button">
+            <img src="./src/assets/icon-brush.svg" class="fas fa-star" />
+          </button>
+          <button class="icon-button">
+            <img src="./src/assets/icon-file-copy.svg" class="fas fa-comment" />
+          </button>
+          <button class="icon-button">
+            <img src="./src/assets/icon-delete.svg" class="fas fa-share" />
+          </button>
+          <button class="icon-button">
+            <img
+              src="./src/assets/icon-more-horiz.svg"
+              class="fas fa-bookmark"
+            />
+          </button>
+        </div>
+      </div>
     `;
   }
 }
