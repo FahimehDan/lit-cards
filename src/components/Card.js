@@ -149,22 +149,14 @@ export class CardItem extends LitElement {
               name="${this.userName}"
               value="${this.id}"
             />
-            <img
-              src="./public/images/icon-world.svg"
-              alt="Avatar"
-              class="small-icon"
-            />
+            <img src="/images/icon-world.svg" alt="Avatar" class="small-icon" />
             <label class="username" for="${this.userName}">
               ${this.userName}</label
             ><br />
           </h5>
         </header>
         <div class="img-container">
-          <img
-            src="./public/images/icon-world.svg"
-            alt="Avatar"
-            class="image-bg"
-          />
+          <img src="/images/icon-world.svg" alt="Avatar" class="image-bg" />
         </div>
         <div class="container card-body">
           <div class="card-title">
@@ -190,25 +182,19 @@ export class CardItem extends LitElement {
 
         <div class="card-footer">
           <button class="icon-button">
-            <img src="./public/images/icon-eye.svg" class="fas fa-heart" />
+            <img src="/images/icon-eye.svg" class="fas fa-heart" />
           </button>
           <button class="icon-button">
-            <img src="./public/images/icon-brush.svg" class="fas fa-star" />
+            <img src="/images/icon-brush.svg" class="fas fa-star" />
           </button>
           <button class="icon-button">
-            <img
-              src="./public/images/icon-file-copy.svg"
-              class="fas fa-comment"
-            />
+            <img src="/images/icon-file-copy.svg" class="fas fa-comment" />
           </button>
           <button class="icon-button">
-            <img src="./public/images/icon-delete.svg" class="fas fa-share" />
+            <img src="/images/icon-delete.svg" class="fas fa-share" />
           </button>
           <button class="icon-button">
-            <img
-              src="./public/images/icon-more-horiz.svg"
-              class="fas fa-bookmark"
-            />
+            <img src="/images/icon-more-horiz.svg" class="fas fa-bookmark" />
           </button>
         </div>
       </div>

@@ -71,25 +71,17 @@ export class MenuBar extends LitElement {
     return html`
       <nav>
         <div class="left">
-          <a href="/" class="home-icon"
-            ><img src="./public/images/home.svg"
-          /></a>
+          <a href="/" class="home-icon"><img src="/images/home.svg" /></a>
         </div>
         <div class="right menu-icons">
-          <a href="#" class="menu-star"
-            ><img src="./public/images/star.svg"
-          /></a>
+          <a href="#" class="menu-star"><img src="/images/star.svg" /></a>
           <div class="divider"></div>
-          <a href="#" class="menu-setting"
-            ><img src="./public/images/setting.svg"
-          /></a>
+          <a href="#" class="menu-setting"><img src="images/setting.svg" /></a>
           <div class="divider"></div>
-          <a href="#" class="menu-support"
-            ><img src="./public/images/support.svg"
-          /></a>
+          <a href="#" class="menu-support"><img src="images/support.svg" /></a>
           <div class="divider"></div>
           <a href="#" class="menu-email"
-            ><img src="./public/images/email.svg" /><span
+            ><img src="/images/email.svg" /><span
               class="circle-counter"
               id="counter"
               >4</span
@@ -97,12 +89,8 @@ export class MenuBar extends LitElement {
           >
 
           <div class="divider"></div>
-          <a href="#" class="menu-notif"
-            ><img src="./public/images/notif.svg"
-          /></a>
-          <a href="#" class="menu-avatar"
-            ><img src="./public/images/avatar.png"
-          /></a>
+          <a href="#" class="menu-notif"><img src="/images/notif.svg" /></a>
+          <a href="#" class="menu-avatar"><img src="/images/avatar.png" /></a>
         </div>
       </nav>
     `;
