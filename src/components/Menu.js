@@ -33,6 +33,27 @@ export class MenuBar extends LitElement {
       height: 40px;
     }
 
+    .menu-email {
+      position: relative;
+    }
+
+    .circle-counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 16px;
+      height: 16px;
+      background: #eb6200;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      font-weight: 500;
+      box-sizing: border-box;
+      transform: translate(5px, -5px);
+    }
+
     .right.menu-icons {
       padding: 0;
       background-color: #ecf2f6;
@@ -64,8 +85,13 @@ export class MenuBar extends LitElement {
           /></a>
           <div class="divider"></div>
           <a href="#" class="menu-email"
-            ><img src="./src/assets/email.svg"
-          /></a>
+            ><img src="./src/assets/email.svg" /><span
+              class="circle-counter"
+              id="counter"
+              >4</span
+            ></a
+          >
+
           <div class="divider"></div>
           <a href="#" class="menu-notif"
             ><img src="./src/assets/notif.svg"
