@@ -21,6 +21,7 @@ export class AppLayout extends LitElement {
       align-items: center;
       background-color: white;
       padding: 5px 24px 24px 24px;
+      border-bottom: 1px solid #a3b1c2;
     }
 
     .header .create-button {
@@ -77,6 +78,16 @@ export class AppLayout extends LitElement {
       width: 1px;
       background-color: #c3d1e1;
       margin: 0 10px;
+    }
+
+    .horizental-line {
+      width: 100%;
+      height: 32px;
+      background-color: white;
+      border-bottom: 1px solid #a3b1c2;
+      border-top: 0;
+      border-inline: 0;
+      margin: 0;
     }
 
     .button-search {
@@ -150,6 +161,7 @@ export class AppLayout extends LitElement {
             </div>
           </div>
         </div>
+        <hr class="horizental-line" />
 
         <div class="card-container">
           ${filteredCards.map(
