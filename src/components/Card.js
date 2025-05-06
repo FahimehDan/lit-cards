@@ -150,7 +150,7 @@ export class CardItem extends LitElement {
               value="${this.id}"
             />
             <img
-              src="./src/assets/icon-world.svg"
+              src="./public/images/icon-world.svg"
               alt="Avatar"
               class="small-icon"
             />
@@ -161,7 +161,7 @@ export class CardItem extends LitElement {
         </header>
         <div class="img-container">
           <img
-            src="./src/assets/icon-world.svg"
+            src="./public/images/icon-world.svg"
             alt="Avatar"
             class="image-bg"
           />
@@ -190,20 +190,23 @@ export class CardItem extends LitElement {
 
         <div class="card-footer">
           <button class="icon-button">
-            <img src="./src/assets/icon-eye.svg" class="fas fa-heart" />
+            <img src="./public/images/icon-eye.svg" class="fas fa-heart" />
           </button>
           <button class="icon-button">
-            <img src="./src/assets/icon-brush.svg" class="fas fa-star" />
-          </button>
-          <button class="icon-button">
-            <img src="./src/assets/icon-file-copy.svg" class="fas fa-comment" />
-          </button>
-          <button class="icon-button">
-            <img src="./src/assets/icon-delete.svg" class="fas fa-share" />
+            <img src="./public/images/icon-brush.svg" class="fas fa-star" />
           </button>
           <button class="icon-button">
             <img
-              src="./src/assets/icon-more-horiz.svg"
+              src="./public/images/icon-file-copy.svg"
+              class="fas fa-comment"
+            />
+          </button>
+          <button class="icon-button">
+            <img src="./public/images/icon-delete.svg" class="fas fa-share" />
+          </button>
+          <button class="icon-button">
+            <img
+              src="./public/images/icon-more-horiz.svg"
               class="fas fa-bookmark"
             />
           </button>

@@ -156,7 +156,7 @@ export class AppLayout extends LitElement {
                 .value=${this.searchText}
               />
               <button type="submit" class="button-search">
-                <img src="./src/assets/search.svg" alt="Search" />
+                <img src="./public/images/search.svg" alt="Search" />
               </button>
             </div>
           </div>
