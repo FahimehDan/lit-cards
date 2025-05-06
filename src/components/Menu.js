@@ -6,7 +6,7 @@ export class MenuBar extends LitElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 0 0 1rem;
+      padding: 0;
       background-color: #ecf2f6;
       height: 40px;
       line-height: 0px;
@@ -20,9 +20,17 @@ export class MenuBar extends LitElement {
       gap: 5px;
     }
 
+    .menu-notif {
+      padding-inline-end: 5px;
+    }
+
     .home-icon {
       display: flex;
       align-items: center;
+      justify-content: center;
+      background-color: white;
+      width: 56px;
+      height: 40px;
     }
 
     .right.menu-icons {
